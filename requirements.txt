@@ -1,0 +1,7 @@
+# Auto AAH RRSS - dependencias gratuitas
+feedparser>=6.0.10
+Pillow>=10.0.0
+python-telegram-bot>=20.0
+tweepy>=4.14.0
+requests>=2.31.0
+python-dotenv>=1.0.0
