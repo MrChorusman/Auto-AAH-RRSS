@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TikTok Callback - A Altas Horas</title>
+  <style>body{font-family:Arial,sans-serif;max-width:900px;margin:32px auto;padding:0 20px;line-height:1.7;color:#222}code{background:#f2f2f2;padding:2px 6px;border-radius:4px}</style>
+</head>
+<body>
+  <h1>TikTok OAuth Callback</h1>
+  <p>Si has llegado aquí desde TikTok, copia los valores mostrados abajo y pásalos al asistente para completar la conexión.</p>
+  <p><strong>code:</strong> <code id="code">(sin code)</code></p>
+  <p><strong>state:</strong> <code id="state">(sin state)</code></p>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('code').textContent = params.get('code') || '(sin code)';
+    document.getElementById('state').textContent = params.get('state') || '(sin state)';
+  </script>
+  <p><a href="./index.html">Volver</a></p>
+</body>
+</html>
